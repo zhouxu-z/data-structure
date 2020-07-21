@@ -16,7 +16,6 @@ public class Heap<T extends Comparable> {
 
     /**
      * 判断堆中索引i的元素是否小于索引j处的元素
-     *
      * @param i
      * @param j
      * @return
@@ -25,10 +24,8 @@ public class Heap<T extends Comparable> {
         return item[i].compareTo(item[j]) < 0;
     }
 
-
     /**
      * 交换
-     *
      * @param i
      * @param j
      */
@@ -40,7 +37,6 @@ public class Heap<T extends Comparable> {
 
     /**
      * 删除最大元素并返回
-     *
      * @return
      */
     public T delMax() {
@@ -54,7 +50,6 @@ public class Heap<T extends Comparable> {
 
     /**
      * 使用下沉算法，使得索引k处的元素能在堆中处于一个正确的位置
-     *
      * @param k
      */
     private void swim(int k) {
@@ -78,7 +73,6 @@ public class Heap<T extends Comparable> {
 
     /**
      * 插入
-     *
      * @param t
      */
     public void insert(T t) {
@@ -88,7 +82,6 @@ public class Heap<T extends Comparable> {
 
     /**
      * 使用上浮算法，使得索引k处的元素能在堆中处于一个正确的位置
-     *
      * @param k
      */
     private void sink(int k) {
@@ -101,7 +94,7 @@ public class Heap<T extends Comparable> {
     }
 
     public static void main(String[] args) {
-        Heap<String> heap = new Heap<String>(10);
+        Heap<String> heap = new Heap<>(10);
         heap.insert("A");
         heap.insert("B");
         heap.insert("C");
