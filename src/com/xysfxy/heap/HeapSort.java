@@ -7,7 +7,7 @@ import java.util.Arrays;
  * @Date: 2020/7/20 18:00
  * @Description:∂—≈≈–Ú
  */
-public class HeapSort<T extends Comparable<T>>{
+public class HeapSort<T extends Comparable>{
     /**
      * ≈≈–Ú
      * @param source

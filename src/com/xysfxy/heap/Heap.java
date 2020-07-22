@@ -3,7 +3,7 @@ package com.xysfxy.heap;
 /**
  * @Auther: ÖÜ±¦»Ô
  * @Date: 2020/7/20 16:20
- * @Description:¶Ñ
+ * @Description:×î´ó¶Ñ
  */
 public class Heap<T extends Comparable> {
     private T[] item;
