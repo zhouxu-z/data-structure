@@ -1,9 +1,9 @@
-package com.xysfxy.heap;
+package com.xysfxy.priority;
 
 /**
  * @author: 周宝辉
  * @date: 2020/7/22 12:06
- * @descripation:最大优先队列
+ * @descripation:最大优先队列（依据最大堆实现的）
  */
 public class MaxPriorityQueue<T extends Comparable> {
     private T[] item;

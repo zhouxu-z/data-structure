@@ -1,16 +1,16 @@
 package com.xysfxy.collection;
 
 /**
- * @Auther: ÖÜ±¦»Ô
+ * @Auther: å‘¨å®è¾‰
  * @Date: 2020/7/15 14:06
- * @Description:ÅĞ¶Ï×Ö·û´®ÖĞµÄĞ¡À¨ºÅÊÇ·ñÆ¥ÅäÎÊÌâ
+ * @Description:åˆ¤æ–­å­—ç¬¦ä¸²ä¸­çš„å°æ‹¬å·æ˜¯å¦åŒ¹é…é—®é¢˜
  */
 public class Question01 {
 
     public static void main(String[] args) {
-        String str1 = "(Î÷°²(±¦¼¦)(sa))";
+        String str1 = "(è¥¿å®‰(å®é¸¡)(sa))";
         String str2 = "(a(s(s)f)";
-        String str3 = "(2)s(,)ºº×Ó)";
+        String str3 = "(2)s(,)æ±‰å­)";
         String str4 = "(1+2)(9-5)";
         System.out.println(isFun(str1));
         System.out.println(isFun(str2));

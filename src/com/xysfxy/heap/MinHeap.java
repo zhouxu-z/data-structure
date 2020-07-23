@@ -3,13 +3,13 @@ package com.xysfxy.heap;
 /**
  * @Auther: 周宝辉
  * @Date: 2020/7/20 16:20
- * @Description:最大堆
+ * @Description:最小堆
  */
-public class Heap<T extends Comparable> {
+public class MinHeap<T extends Comparable> {
     private T[] item;
     private int N;
 
-    public Heap(int capacity) {
+    public MinHeap(int capacity) {
         this.item = (T[]) new Comparable[capacity + 1];
         this.N = 0;
     }
@@ -40,34 +40,34 @@ public class Heap<T extends Comparable> {
      * @return
      */
     public T delMax() {
-        T max = item[1];
+        T min = item[1];
         swap(1, N);
         item[N] = null;
         --N;
-        swim(1);
-        return max;
+        sink(1);
+        return min;
     }
 
     /**
      * 使用下沉算法，使得索引k处的元素能在堆中处于一个正确的位置
      * @param k
      */
-    private void swim(int k) {
+    private void sink(int k) {
         while (2 * k <= N) {
-            int maxIndex = 2 * k;
+            int min = 2 * k;
             if (2 * k + 1 <= N) {
                 if (less(2 * k, 2 * k + 1)) {
-                    maxIndex = 2 * k + 1;
+                    min = 2 * k;
                 } else {
-                    maxIndex = 2 * k;
+                    min = 2 * k + 1;
                 }
             }
-            if (!less(k, maxIndex)) {
+            if (!less(min, k)) {
                 break;
             } else {
-                swap(k, maxIndex);
+                swap(k, min);
             }
-            k = maxIndex;
+            k = min;
         }
     }
 
@@ -77,16 +77,16 @@ public class Heap<T extends Comparable> {
      */
     public void insert(T t) {
         item[++N] = t;
-        sink(N);
+        swim(N);
     }
 
     /**
      * 使用上浮算法，使得索引k处的元素能在堆中处于一个正确的位置
      * @param k
      */
-    private void sink(int k) {
+    private void swim(int k) {
         while (k > 1) {
-            if (less(k / 2, k)) {
+            if (less(k, k / 2)) {
                 swap(k, k / 2);
             }
             k = k / 2;
@@ -94,7 +94,7 @@ public class Heap<T extends Comparable> {
     }
 
     public static void main(String[] args) {
-        Heap<String> heap = new Heap<>(10);
+        MinHeap<String> heap = new MinHeap<>(10);
         heap.insert("A");
         heap.insert("B");
         heap.insert("C");
