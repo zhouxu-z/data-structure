@@ -1,6 +1,6 @@
 package com.xysfxy.test;
 
-import com.xysfxy.tree.UfTree;
+import com.xysfxy.tree.UfTreeWeighted;
 
 import java.util.Scanner;
 
@@ -9,10 +9,10 @@ import java.util.Scanner;
  * @date: 2020/7/23 18:33
  * @descripation:测试并查集
  */
-public class UfTreeTest {
+public class UfTreeWeightedTest {
 
     public static void main(String[] args) {
-        UfTree uf = new UfTree(5);
+        UfTreeWeighted uf = new UfTreeWeighted(5);
         System.out.println("默认情况下，并查集中有" + uf.count() + "个分组");
         Scanner scanner = new Scanner(System.in);
         while(true){

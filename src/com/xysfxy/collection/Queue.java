@@ -4,9 +4,9 @@ package com.xysfxy.collection;
 import java.util.Iterator;
 
 /**
- * @Auther: ÖÜ±¦»Ô
+ * @Auther: å‘¨å®è¾‰
  * @Date: 2020/7/15 15:16
- * @Description:¶ÓÁĞµÄÊµÏÖ
+ * @Description:é˜Ÿåˆ—çš„å®ç°
  */
 public class Queue<T> implements Iterable<T> {
     private Node head;
@@ -28,7 +28,7 @@ public class Queue<T> implements Iterable<T> {
     }
 
     /**
-     * È¡³öÔªËØ
+     * å–å‡ºå…ƒç´ 
      *
      * @return
      */
@@ -46,7 +46,7 @@ public class Queue<T> implements Iterable<T> {
     }
 
     /**
-     * ²åÈëÔªËØ
+     * æ’å…¥å…ƒç´ 
      *
      * @param t
      */
@@ -92,7 +92,7 @@ public class Queue<T> implements Iterable<T> {
         queue.enqueue(2);
         queue.enqueue(3);
         queue.enqueue(4);
-        System.out.println("²åÈëÔªËØ");
+        System.out.println("æ’å…¥å…ƒç´ ");
         for (int i : queue) {
             System.out.println(i);
         }
@@ -100,7 +100,7 @@ public class Queue<T> implements Iterable<T> {
         queue.dequeue();
         queue.dequeue();
         queue.dequeue();
-        System.out.println("É¾³ıÔªËØ");
+        System.out.println("åˆ é™¤å…ƒç´ ");
         for (int i : queue) {
             System.out.println(i);
         }
