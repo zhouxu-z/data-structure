@@ -1,9 +1,9 @@
 package com.xysfxy.heap;
 
 /**
- * @Auther: ÖÜ±¦»Ô
+ * @Auther: å‘¨å®è¾‰
  * @Date: 2020/7/20 16:20
- * @Description:×îĞ¡¶Ñ
+ * @Description:æœ€å°å †
  */
 public class MinHeap<T extends Comparable> {
     private T[] item;
@@ -15,7 +15,7 @@ public class MinHeap<T extends Comparable> {
     }
 
     /**
-     * ÅĞ¶Ï¶ÑÖĞË÷ÒıiµÄÔªËØÊÇ·ñĞ¡ÓÚË÷Òıj´¦µÄÔªËØ
+     * åˆ¤æ–­å †ä¸­ç´¢å¼•içš„å…ƒç´ æ˜¯å¦å°äºç´¢å¼•jå¤„çš„å…ƒç´ 
      * @param i
      * @param j
      * @return
@@ -25,7 +25,7 @@ public class MinHeap<T extends Comparable> {
     }
 
     /**
-     * ½»»»
+     * äº¤æ¢
      * @param i
      * @param j
      */
@@ -36,7 +36,7 @@ public class MinHeap<T extends Comparable> {
     }
 
     /**
-     * É¾³ı×î´óÔªËØ²¢·µ»Ø
+     * åˆ é™¤æœ€å¤§å…ƒç´ å¹¶è¿”å›
      * @return
      */
     public T delMax() {
@@ -49,7 +49,7 @@ public class MinHeap<T extends Comparable> {
     }
 
     /**
-     * Ê¹ÓÃÏÂ³ÁËã·¨£¬Ê¹µÃË÷Òık´¦µÄÔªËØÄÜÔÚ¶ÑÖĞ´¦ÓÚÒ»¸öÕıÈ·µÄÎ»ÖÃ
+     * ä½¿ç”¨ä¸‹æ²‰ç®—æ³•ï¼Œä½¿å¾—ç´¢å¼•kå¤„çš„å…ƒç´ èƒ½åœ¨å †ä¸­å¤„äºä¸€ä¸ªæ­£ç¡®çš„ä½ç½®
      * @param k
      */
     private void sink(int k) {
@@ -72,7 +72,7 @@ public class MinHeap<T extends Comparable> {
     }
 
     /**
-     * ²åÈë
+     * æ’å…¥
      * @param t
      */
     public void insert(T t) {
@@ -81,7 +81,7 @@ public class MinHeap<T extends Comparable> {
     }
 
     /**
-     * Ê¹ÓÃÉÏ¸¡Ëã·¨£¬Ê¹µÃË÷Òık´¦µÄÔªËØÄÜÔÚ¶ÑÖĞ´¦ÓÚÒ»¸öÕıÈ·µÄÎ»ÖÃ
+     * ä½¿ç”¨ä¸Šæµ®ç®—æ³•ï¼Œä½¿å¾—ç´¢å¼•kå¤„çš„å…ƒç´ èƒ½åœ¨å †ä¸­å¤„äºä¸€ä¸ªæ­£ç¡®çš„ä½ç½®
      * @param k
      */
     private void swim(int k) {

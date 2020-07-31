@@ -36,10 +36,10 @@ public class MinPriorityQueue<T extends Comparable> {
     }
 
     /**
-     * 删除最大元素
+     * 删除最小元素
      * @return
      */
-    public T delMax(){
+    public T delMin(){
         T min = item[1];
         swap(1, N);
         item[N] = null;
@@ -120,7 +120,7 @@ public class MinPriorityQueue<T extends Comparable> {
         queue.insert("G");
         queue.insert("H");
         while(!queue.isEmpty()){
-            String s = queue.delMax();
+            String s = queue.delMin();
             System.out.print(s + " ");
         }
     }

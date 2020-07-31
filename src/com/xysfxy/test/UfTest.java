@@ -5,27 +5,27 @@ import com.xysfxy.tree.Uf;
 import java.util.Scanner;
 
 /**
- * @author: ÖÜ±¦»Ô
+ * @author: å‘¨å®è¾‰
  * @date: 2020/7/23 18:33
- * @descripation:²âÊÔ²¢²é¼¯
+ * @descripation:æµ‹è¯•å¹¶æŸ¥é›†
  */
 public class UfTest {
 
     public static void main(String[] args) {
         Uf uf = new Uf(5);
-        System.out.println("Ä¬ÈÏÇé¿öÏÂ£¬²¢²é¼¯ÖĞÓĞ" + uf.count() + "¸ö·Ö×é");
+        System.out.println("é»˜è®¤æƒ…å†µä¸‹ï¼Œå¹¶æŸ¥é›†ä¸­æœ‰" + uf.count() + "ä¸ªåˆ†ç»„");
         Scanner scanner = new Scanner(System.in);
         while(true){
-            System.out.print("ÇëÊäÈëµÚÒ»¸öÒªºÏ²¢µÄÔªËØ£º");
+            System.out.print("è¯·è¾“å…¥ç¬¬ä¸€ä¸ªè¦åˆå¹¶çš„å…ƒç´ ï¼š");
             int a = scanner.nextInt();
-            System.out.print("ÇëÊäÈëµÚ¶ş¸öÒªºÏ²¢µÄÔªËØ£º");
+            System.out.print("è¯·è¾“å…¥ç¬¬äºŒä¸ªè¦åˆå¹¶çš„å…ƒç´ ï¼š");
             int b = scanner.nextInt();
             if(uf.connected(a, b)){
-                System.out.println("ÕâÁ½¸öÔªËØÒÑ¾­ÔÚÒ»¸ö×éÖĞÁË");
+                System.out.println("è¿™ä¸¤ä¸ªå…ƒç´ å·²ç»åœ¨ä¸€ä¸ªç»„ä¸­äº†");
                 continue;
             }
             uf.union(a, b);
-            System.out.println("ºÏ²¢Ö®ºó»¹ÓĞ" + uf.count() + "¸ö·Ö×é");
+            System.out.println("åˆå¹¶ä¹‹åè¿˜æœ‰" + uf.count() + "ä¸ªåˆ†ç»„");
         }
 
     }

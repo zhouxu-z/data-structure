@@ -1,13 +1,11 @@
 package com.xysfxy.graph;
 
-import com.xysfxy.collection.Queue;
-
 import java.util.ArrayDeque;
 
 /**
  * @author: 周宝辉
  * @date: 2020/7/25 15:32
- * @descripation:图的深度优先搜索
+ * @descripation:图的广度优先搜索
  */
 public class BreadthFirstSearch {
     /**
@@ -24,7 +22,7 @@ public class BreadthFirstSearch {
     private ArrayDeque<Integer> waitSearch;
 
     /**
-     * 构造深度优先搜索对象，使用深度优先搜索找出图中s顶点的所有相通顶点
+     * 构造广度优先搜索对象，使用广度优先搜索找出图中s顶点的所有相通顶点
      * @param g
      * @param s
      */

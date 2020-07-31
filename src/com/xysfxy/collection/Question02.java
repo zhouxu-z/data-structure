@@ -1,15 +1,15 @@
 package com.xysfxy.collection;
 
 /**
- * @Auther: ÖÜ±¦»Ô
+ * @Auther: ï¿½Ü±ï¿½ï¿½ï¿½
  * @Date: 2020/7/15 14:24
- * @Description:Äæ²¨À¼Ê½
+ * @Description:ï¿½æ²¨ï¿½ï¿½Ê½
  */
 public class Question02 {
 
     public static void main(String[] args) {
-        //ÖÐ×º±í´ïÊ½  3*(17-15)+18/6
-        String str[] = {"3", "17", "15", "-", "*", "18", "6", "/", "+"};
+        //ï¿½ï¿½×ºï¿½ï¿½ï¿½Ê½  3*(17-15)+18/6
+        String[] str = {"3", "17", "15", "-", "*", "18", "6", "/", "+"};
         System.out.println(fun(str));
     }
 

@@ -140,7 +140,6 @@ public class IndexMinPriorityQueue<T extends Comparable> {
      * @return
      */
     public boolean contains(int k){
-        System.out.println(Arrays.toString(qp));
         return qp[k] != -1;
     }
 

@@ -3,24 +3,24 @@ package com.xysfxy.sort;
 import java.util.Arrays;
 
 /**
- * @Auther: ÖÜ±¦»Ô
+ * @Auther: ï¿½Ü±ï¿½ï¿½ï¿½
  * @Date: 2020/7/13 21:52
- * @Description:¹é²¢ÅÅÐò
+ * @Description:ï¿½é²¢ï¿½ï¿½ï¿½ï¿½
  */
 public class Merger {
-    private static int assist[];
+    private static int[] assist;
 
-    public static void sort(int a[], int lo, int hi) {
+    public static void sort(int[] a, int lo, int hi) {
         assist = new int[a.length];
         if(lo < hi){
-            int mid = (lo + hi) / 2;//·Ö×é
-            sort(a, lo, mid);//ÅÅÐò
-            sort(a, mid + 1, hi);//ÅÅÐò
-            merge(a, lo, mid, hi);//¹é²¢
+            int mid = (lo + hi) / 2;//ï¿½ï¿½ï¿½ï¿½
+            sort(a, lo, mid);//ï¿½ï¿½ï¿½ï¿½
+            sort(a, mid + 1, hi);//ï¿½ï¿½ï¿½ï¿½
+            merge(a, lo, mid, hi);//ï¿½é²¢
         }
     }
 
-    private static void merge(int a[], int lo, int mid, int hi) {
+    private static void merge(int[] a, int lo, int mid, int hi) {
         int i = lo, p1 = lo, p2 = mid + 1;
         while (p1 <= mid && p2 <= hi){
             if(a[p1] < a[p2]){

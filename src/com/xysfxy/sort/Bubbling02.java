@@ -3,9 +3,9 @@ package com.xysfxy.sort;
 import java.util.Arrays;
 
 /**
- * @Auther: ÖÜ±¦»Ô
+ * @Auther: ï¿½Ü±ï¿½ï¿½ï¿½
  * @Date: 2020/7/13 15:02
- * @Description:Ã°ÅÝÅÅÐò£¬×î»µÊ±¼ä¸´ÔÓ¶ÈO(N^2)
+ * @Description:Ã°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½î»µÊ±ï¿½ä¸´ï¿½Ó¶ï¿½O(N^2)
  */
 public class Bubbling02 {
 
@@ -16,10 +16,10 @@ public class Bubbling02 {
     }
 
     /**
-     * ÅÅÐò
+     * ï¿½ï¿½ï¿½ï¿½
      * @param a
      */
-    public static void sort(Comparable a[]) {
+    public static void sort(Comparable[] a) {
         for (int i = a.length - 1; i >= 0; i--) {
             for (int j = 0; j < i; j++) {
                 if (isSwap(a[j], a[j + 1])) {
@@ -30,7 +30,7 @@ public class Bubbling02 {
     }
 
     /**
-     * ÅÐ¶Ïc1ÊÇ·ñ´óÓÚc2
+     * ï¿½Ð¶ï¿½c1ï¿½Ç·ï¿½ï¿½ï¿½ï¿½c2
      * @param c1
      * @param c2
      * @return
@@ -40,12 +40,12 @@ public class Bubbling02 {
     }
 
     /**
-     * ½»»»ÔªËØ
+     * ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
      * @param a
      * @param i
      * @param j
      */
-    public static void swap(Comparable a[], int i, int j) {
+    public static void swap(Comparable[] a, int i, int j) {
         Comparable temp = a[i];
         a[i] = a[j];
         a[j] = temp;
